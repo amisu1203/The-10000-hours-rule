@@ -30,14 +30,14 @@
                 <div class="inputJob">
                     <p>나는</p>
                     <label>
-                        <input type="text" placeholder="예)프로그래밍">
+                        <input id="inpJob" type="text" placeholder="예)프로그래밍">
                     </label>
                     <p>전문가가 될 것이다.</p>
                 </div>
                 <div class="inputHour">
                     <p>그래서 앞으로 매일 하루에</p>
                     <label>
-                        <input type="number" placeholder="예)5시간" min="1" max="24">
+                        <input id="inpHour" type="number" placeholder="예)5시간" min="1" max="24" maxlength="2">
                     </label>
                     <p>시간씩 훈련할 것이다.</p>
                 </div>
@@ -47,17 +47,17 @@
                 <h2 class="sr-only">입력 결과</h2>
                 <p class="outputJob">
                     당신은
-                    <strong>프로그래밍</strong>
+                    <strong id="jobValue"></strong>
                     전문가가 되기 위해서
                 </p>
                 <p class="outputHour">
                     대략
-                    <strong>5110</strong>
+                    <strong id="hourValue"></strong>
                     일 이상 훈련하셔야 합니다! :)
                 </p>
             </section>
         </main>
-        <!-- <footer>
+        <footer>
             <section class="copyright">
                 <h2 class="sr-only">저작권 정보</h2>
                 <img src="http://www.paullab.co.kr/images/10000hours/logo.png" alt="company logo">
@@ -67,8 +67,9 @@
                     수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
                 </small>
             </section>
-        </footer> -->
+        </footer>
     </div>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
