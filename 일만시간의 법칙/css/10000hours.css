@@ -33,7 +33,7 @@ html {
 }
 
 body {
-    background: #a288b7;
+    background: #a1bad7;
 }
 
 .sr-only {
@@ -88,7 +88,6 @@ main {
 }
 
 .container main q {
-    width: 486px;
     height: 40px;
     font-family: 'OTEnjoystoriesBA';
     font-style: normal;
@@ -99,7 +98,7 @@ main {
     display: flex;
     justify-content: center;
     text-align: center;
-    color: #F5DF4D;
+    color: #003462;
 }
 
 .container main .quote {
@@ -125,7 +124,7 @@ main {
 }
 
 .container main .inputArea {
-    width: 100%;
+    /* width: 100%; */
     height: 152px;
     margin-bottom: 100px;
     display: flex;
@@ -153,6 +152,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .container main .inputArea input {
@@ -169,13 +169,13 @@ main {
 }
 
 .container main .btnSubmit {
-    width: 565px;
+    width: 80%;
     padding: 21px 40px;
-    background: #FCEE21;
+    background: #122985;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 56px;
     font-family: 'GmarketSansMedium';
-    color: #5B2386;
+    color: #ffffff;
     line-height: 35px;
     font-weight: 700;
     margin-bottom: 120px;
@@ -231,16 +231,21 @@ main {
 
     /* 메인 */
     .container main q {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     .container main .quote {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     /* 입력창 */
+    .container main .inputArea input {
+        width: 228px;
+        height: 40px;
+    }
     .container main .inputArea .inputJob {
         width: 228px;
+        /* justify-content: space-evenly; */
     }
 
     .container main .inputArea .inputHour {
@@ -250,7 +255,9 @@ main {
     .container main .btnSubmit {
         width: 100%;
         padding: 10px 20px;
+        margin-top: 200px;
     }
+
 }
 
 /* 1500px 이상일 때 */
@@ -272,4 +279,7 @@ main {
         width: 80%;
         margin: 0 auto;
     }
+    /* 메인 버튼 */
+    .container main .btnSubmit {
+        width: 660px;
 }
