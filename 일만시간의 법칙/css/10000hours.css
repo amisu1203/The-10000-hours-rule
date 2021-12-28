@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: #a288b7;
+}
+
+.sr-only {
+    position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.container header {
+    position: relative;
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.container header .clock {
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+}
+
+.container header .title {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 2rem;
+}
+.container main q {
+    width: 486px;
+    height: 40px;
+    font-family: 'OTEnjoystoriesBA';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.6rem;
+    line-height: 39.6px;
+    margin-bottom: 78px;
+    /* identical to box height */
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    color: #F5DF4D;
+}
+.container main .quote {
+    /* width: 373px; */
+    height: 85px;
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 102px;
+}
+.container main .quote strong {
+    font-size: 24px;
+    font-family: 'GmarketSansBold';
+    font-weight: 700;
+    line-height: 30px;
+}
+.container main .inputArea {
+    width: 100%;
+    height: 152px;
+    margin-bottom: 115px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    line-height: 57px;
+    font-size: 2.4rem;
+}
+.container main .inputArea .inputJob {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 514px; */
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.container main .inputArea .inputHour {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 765px; */
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.container main .inputArea input {
+    width: 228px;
+    height: 57px;
+    border-radius: 7px;
+    background: #FFFFFF;
+    text-align: center;
+    font-family: 'GmarketSansMedium';
+    color: #babcbe;
+    line-height: 24px;
+    font-size: 2.4rem;
+    margin: 0 10px;
+}
+.container main .btnSubmit {
+    width: 565px;
+    padding: 21px 40px;
+    background: #FCEE21;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+    font-family: 'GmarketSansMedium';
+    color: #5B2386;
+    line-height: 35px;
+    font-weight: 700;
+    margin-bottom: 147px;
+    font-size: 2.4rem;
+}
+.container main .outputArea {
+    width: 663px;
+    height: 161px;
+    text-align: center;
+    margin-bottom: 329px;
+    font-weight: 400;
+    color: white;
+}
+.container main .outputArea strong {
+    font-size: 72px;
+    line-height: 72px;
+    vertical-align: middle;
+}
+.container footer {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 50px;
+    color: white;
+}
+.container footer .copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container footer .copyright img {
+    width: 125px;
+    height: 25px;
+    margin-bottom: 25px;
+}
+.container footer .copyright small {
+    line-height: 27px;
+}
+
+/* 미디어쿼리 */
+
+/* 428px 이하일 때 */
+@media screen and (max-width: 428px) {
+    html {
+        font-size: 6px;
+    }
+    .container main .inputArea .inputJob {
+        width: 228px;
+    }
+    .container main .inputArea .inputHour {
+        width: 228px;
+    }
+    .container main .btnSubmit {
+        width: 100%;
+        padding: 10px 20px;
+    }
+}
+
+/* 1500px 이상일 때 */
+@media screen and (min-width: 1500px) {
+    body {
+        width: 1500px;
+        margin: 0 auto;
+    }
+    .container header {
+        width: 80%;
+    }
+    
+    .container header .clock {
+        width: 20%;
+    }
+    
+    .container header .title {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
