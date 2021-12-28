@@ -260,10 +260,10 @@ main {
 
 }
 
-/* 1500px 이상일 때 */
-@media screen and (min-width: 1500px) {
+/* 1200px 이상일 때 */
+@media screen and (min-width: 1200px) {
     body {
-        width: 1500px;
+        width: 1200px;
         margin: 0 auto;
     }
 
@@ -282,4 +282,5 @@ main {
     /* 메인 버튼 */
     .container main .btnSubmit {
         width: 660px;
+    }
 }
